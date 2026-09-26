@@ -37,8 +37,8 @@ mkdir ~/animals
 touch /tmp/temp
 
 2.2.4
-echo "Hello" >> /tmp/temp
-echo "world" > /tmp/temp
+echo "Hello" > /tmp/temp
+echo "world" >> /tmp/temp
 nano /tmp/temp
 
 2.2.5
@@ -77,7 +77,7 @@ mv ~/fruits/pineaple ~/fruits/pineapple
 
 2.2.15
 history -w
-ln ~/.bash_history ~/bash_history/hardlink
+ln ~/.bash_history ~/bash_history_hardlink
 ls -l ~/bash_history_hardlink 
 
 2.2.16
@@ -113,6 +113,13 @@ sudo cat /etc/shadow
 2.4.4
 grep '^sudo:' /etc/group
 
+2.4.5
+sudo apt update
+sudo apt install build-essential
+gcc --version
+g++ --version
+make -version
+
 2.5. Search for files and directories
 2.5.1
 man find
@@ -145,7 +152,7 @@ find . -mindepth 1 -type d -empty
 find . -mindepth 1 -type d -empty -delete
 
 2.5.11
-find . -type -f -empty -delete
+find . -type f -empty -delete
 
 2.5.12
 find . -type f -links +1
