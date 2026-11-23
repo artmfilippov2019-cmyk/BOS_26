@@ -1,0 +1,4 @@
+execve("./launcher", ["./launcher"], 0x7fff7c4cd6c0 /* 54 vars */) = 0
+execve("./childinfo", ["childinfo", "one", "two"], 0x7ffd63e12200 /* 2 vars */) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

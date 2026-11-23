@@ -1,0 +1,11 @@
+4235  execve("./myrun", ["./myrun", "/bin/true"], 0x7fff4947a5f0 /* 54 vars */) = 0
+4235  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7affc7fefa10) = 4236
+4236  execve("/bin/true", ["/bin/true"], 0x7ffc6f6a1b90 /* 54 vars */ <unfinished ...>
+4235  wait4(4236 <unfinished ...>
+4236  <... execve resumed>)             = 0
+4236  exit_group(0)                     = ?
+4236  +++ exited with 0 +++
+4235  <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 4236
+4235  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4236, si_uid=1001, si_status=0, si_utime=0, si_stime=0} ---
+4235  exit_group(0)                     = ?
+4235  +++ exited with 0 +++

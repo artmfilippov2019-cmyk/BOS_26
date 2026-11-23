@@ -1,0 +1,6 @@
+execve("./myrun", ["./myrun", "/bin/true"], 0x7ffdc757c558 /* 54 vars */) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x75c86da65a10) = 4208
+wait4(4208, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 4208
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4208, si_uid=1001, si_status=0, si_utime=0, si_stime=0} ---
+exit_group(0)                           = ?
++++ exited with 0 +++

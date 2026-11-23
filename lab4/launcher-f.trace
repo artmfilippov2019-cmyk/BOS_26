@@ -1,0 +1,4 @@
+4176  execve("./launcher", ["./launcher"], 0x7ffd70dbc7c8 /* 54 vars */) = 0
+4176  execve("./childinfo", ["childinfo", "one", "two"], 0x7ffdae13b280 /* 2 vars */) = 0
+4176  exit_group(0)                     = ?
+4176  +++ exited with 0 +++
